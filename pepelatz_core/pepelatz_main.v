@@ -51,7 +51,7 @@ module Pepelatz
      assign instruction1=command[11:6];
     wire [4:0]instruction2;
      assign instruction2=command[15:12];
-    reg GetCommand;//if GetCommand=0, current command is not actual.
+    reg GetCommand;//if GetCommand=0, current command is not actual!
 
   always@(posedge clk)//Main block
    if (GetCommand==0) begin//Get command
